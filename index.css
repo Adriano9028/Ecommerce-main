@@ -27,7 +27,7 @@ body {
    position: relative;
   
 }
-.logo {
+.logo{
   color: #0084ff;
 }
 .logo span {
@@ -82,7 +82,7 @@ header {
   flex-basis: 50%;
 }
 .header-bottom-left h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   line-height: 3.2rem;
   margin-bottom: 1.5rem;
 }
@@ -351,7 +351,7 @@ main {
   flex-direction: column;
 }
 .Produtos img{
-  width: 70px;
+  width: 60px;
 }
 .Produtos:hover{
 background-color: lightgray;
@@ -365,6 +365,9 @@ background-color: lightgray;
 .rate {
   color: #0084ff;
   font-size: 14px;
+}
+.produtos-price {
+  font-size: 16px;
 }
 .produtos-price span {
   font-weight: 400;
