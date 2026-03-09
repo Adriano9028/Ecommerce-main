@@ -17,13 +17,14 @@ body {
   position: sticky;
   top: 0;
   box-shadow: 10px 0 10px #2c2c2c;
-  z-index: 99;
+  
 }
 .navbar > div {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
+   position: relative;
+  
 }
 .logo {
   color: #0084ff;
@@ -114,7 +115,57 @@ header {
 }
 
 
+/* menu-mobile */
+.menu-mobile-icon{
+  display: none;
+}
+.menu-mobile{
+  display: none;
+}
+
+
+
 @media (max-width: 800px) {
+  /* menu-mobile */
+  .navbar{
+    position: sticky;
+   z-index: 9999;
+    padding: 1.5rem 4rem;
+  }
+   .nav-icon-container{
+  
+   margin-left: 80px;
+   }
+  .nav-icon-container img{
+    width: 25px;
+    margin-right: 10px;
+   
+  }
+  .menu-mobile-icon{
+    display: none;
+  }
+  .menu-mobile-icon button{
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.menu-mobile nav ul{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #2c2c2c49;
+  
+}
+.menu-mobile .nav-item{
+  display: block;
+  padding-top: 1.2rem;
+  font-size: 20px;
+}
+  .open{
+    display: block;
+  }
+  /* menu-dektop */
   .logo {
     font-size: 1.2rem;
   }
@@ -126,8 +177,15 @@ header {
     text-align: center;
     padding-top: 4rem;
   }
+  .header-bottom-left h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 30px;
+  }
+  .header-bottom-side-right img{
+    display:block;
+  }
   nav {
-    position: absolute;
     background-color: #2c2c2c;
     width: 100%;
     top: 46px;
@@ -193,25 +251,31 @@ main {
   margin: 8px auto 0 auto;
 }
 .Produtos {
+  position: relative;
+  z-index: 1;
   color: #2c2c2c;
   margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
 }
+.Produtos img{
+  width: 70px;
+}
 .Produtos:hover{
-  background-color: lightgray;
+background-color: lightgray;
  opacity: 0.5;
 }
 .Produtos-nome {
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 400;
   margin-top: 0.4rem;
 }
 .rate {
   color: #0084ff;
-  font-size: 1.3rem;
+  font-size: 14px;
 }
 .produtos-price span {
-  font-weight: 600;
+  font-weight: 400;
 }
 .exclusive-container {
   color: white;
@@ -224,7 +288,8 @@ main {
 
 @media screen and (max-width: 1390px) {
 .header-bottom-left p {
-  width: 400px;
+  width: 250px;
+  margin: 0 auto;
   line-height: 1.5rem;
   margin-bottom: 1.5rem;
 }
